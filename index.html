@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="个人简历网站 demo，可直接上传到 Netlify 部署。"
+    />
+    <title>张明远 | 个人简历</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">ZM</span>
+        <span>张明远</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">简介</a>
+        <a href="#work">经历</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer · Product-minded Builder</p>
+          <h1 id="hero-title">把复杂业务做成清晰、稳定、好用的前端体验。</h1>
+          <p class="hero-text">
+            我是一名前端工程师，专注 React、TypeScript、Web 性能和设计系统。过去参与过
+            SaaS 控制台、数据看板和移动端 H5 项目，从需求拆解到上线监控都能独立推进。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="mailto:hello@example.com">联系我</a>
+          </div>
+        </div>
+
+        <div class="profile-panel" aria-label="个人信息摘要">
+          <div class="portrait" role="img" aria-label="个人头像占位图">
+            <span>张</span>
+          </div>
+          <div>
+            <h2>张明远</h2>
+            <p>前端工程师 / 上海</p>
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>经验</dt>
+              <dd>5 年</dd>
+            </div>
+            <div>
+              <dt>主栈</dt>
+              <dd>React · TS</dd>
+            </div>
+            <div>
+              <dt>状态</dt>
+              <dd>可远程 / 可到岗</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="about" class="section split-section">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>我能提供什么</h2>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h3>业务落地</h3>
+            <p>把需求拆成可交付的版本，关注边界状态、权限、异常和上线后的可观测性。</p>
+          </article>
+          <article>
+            <h3>体验质量</h3>
+            <p>重视页面信息层级、响应式布局、加载反馈和可访问性，让产品更容易被使用。</p>
+          </article>
+          <article>
+            <h3>工程效率</h3>
+            <p>维护组件库、表单方案、接口类型和自动化检查，减少重复开发和线上回归。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>工作经历</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="time">2023 - 至今</div>
+            <div>
+              <h3>高级前端工程师 · 星河云科技</h3>
+              <p>
+                负责企业级数据分析平台前端架构，建设可复用图表组件、权限路由和埋点方案，
+                首屏加载耗时降低 38%。
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="time">2020 - 2023</div>
+            <div>
+              <h3>前端工程师 · 启点互动</h3>
+              <p>
+                参与 CRM、活动运营和移动端营销页面开发，沉淀表单配置、主题换肤和低代码页面模块。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Selected Work</p>
+          <h2>精选项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-dashboard"></div>
+            <div class="project-body">
+              <h3>实时经营看板</h3>
+              <p>支持多维筛选、图表联动和大屏展示，统一封装 ECharts 配置与数据转换层。</p>
+              <span>React · TypeScript · ECharts</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-system"></div>
+            <div class="project-body">
+              <h3>内部设计系统</h3>
+              <p>搭建组件文档、主题变量和测试样例，让多个业务线共享一致的 UI 规范。</p>
+              <span>Vite · Storybook · CSS Variables</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-mobile"></div>
+            <div class="project-body">
+              <h3>活动报名 H5</h3>
+              <p>覆盖报名、支付、分享和数据追踪流程，兼顾移动端性能和弱网体验。</p>
+              <span>Vue · Pinia · Netlify</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>聊聊你的团队或项目</h2>
+          <p>邮箱：hello@example.com · 微信：resume-demo · GitHub：github.com/example</p>
+        </div>
+        <a class="button primary" href="mailto:hello@example.com">发送邮件</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 张明远</span>
+      <button class="back-to-top" type="button" aria-label="回到顶部">↑</button>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
